@@ -1,0 +1,461 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*style for navbar*/
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+#navbarSupportedContent ul li a{
+font-weight: 400;
+}
+ 
+#navbarSupportedContent ul li a::after{
+    content: '';
+    display:block;
+    height: 3px;
+    width: 0;
+    background: rgb(255, 0, 212);
+    transition: all 800ms;
+}
+#navbarSupportedContent ul li a:hover:after{
+    width: 100%;
+}
+
+span{
+    color: rgb(255, 0, 119);
+}
+
+
+  /* welcome intro container css */
+  .welcome-intro-container{
+      color: rgb(13, 126, 141);
+      position: absolute;
+      top: 210px;
+      left: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  a{
+      text-decoration: none;
+      color: black;
+  }
+  #ft-btn{
+      background-color: rgb(218, 22, 153);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+
+       /* Slideshow container */
+
+       .slideshow-container {
+        margin: auto;
+    }
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    /* Position the "next button" & "prev button" to the right */
+    .next {
+        top:250px;
+        right: 0;
+    }
+    .prev {
+        top:250px;
+        left: 0;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    /* design for platform container after slides*/
+    .platform-container{
+        position: absolute;
+        top: 475px;
+        left: 260px;
+        height: 200px;
+        width: 60%;
+        background-color: rgb(24, 44, 44);
+        color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5%;
+    }
+    .highlight{
+        border: 2px solid rgb(124, 88, 88);
+        cursor: pointer;
+    }
+    .highlight-pic{
+        margin-left:50px;
+        border: 2px dotted grey;
+        transition: all 500ms;
+    }
+    .highlight-pic:hover{
+        height:150px;
+        width: 150px;
+        border: none;
+    }
+
+      /* design for why ft container*/
+    .why-ft-container{
+        text-align: center;
+        height: 600px;
+    }
+    .functions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fn{
+  
+        height: 330px;
+        width: 300px;
+        border: none;
+        box-shadow: 1px 2px 3px 1px aquamarine;
+        transition:all 400ms;
+        overflow: hidden;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .fn:hover{
+        background-color: grey;
+       height: 358px;
+       width: 350px;
+       padding: 5px;
+        box-shadow: 3px 2px 3px 2px rgb(103, 128, 128);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .why-ft-container h4{
+        color: rgb(11, 48, 48);
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .par{
+        background-color: aquamarine;
+        font-weight: bold;
+        font-family: monospace;
+    }
+
+
+          /* design for our customer*/
+          .our-customer-parent{
+            text-align: center;
+              height: 650px;
+          }
+          .our-customer-list-container{
+            display: flex;
+            justify-content: center;
+            align-items:
+             center;
+          }
+          .our-customer,.our-customer-nohover{
+            height: 150px;
+            width: 300px;
+            color: rgb(180, 187, 194);   
+            background-color: rgb(26, 49, 61);
+            border: none;
+            border-radius: 20px;
+            box-shadow: 1px 1px 3px 1px rgb(36, 52, 82);
+            transition:all 400ms;
+            margin-left: 8px;
+            cursor: pointer;
+          }
+          .our-customer:hover{
+             transform: rotate(360deg);
+             padding: 50px;
+             height: 340px;
+             width: 400px;
+             color: wheat;   
+             border-radius: 40px;
+            box-shadow: 1px 2px 3px 2px rgb(11, 22, 43);
+          }
+          .our-customer-parent h4{
+            color: rgb(56, 35, 43);
+            font-weight: bold;
+            text-decoration: underline;
+        }
+          .our-customer-parent h6{
+            color: rgb(81, 109, 136);
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+        .par2{
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+
+              /* design for our teams*/
+        .our-team-parent{
+            font-family:cursive;
+            position: relative;
+           text-align: center;
+            height: 482px;
+            width: 100%;
+            text-decoration:underline;
+            border-top-left-radius:50% 20% / 10% 40% ;
+            border-top-right-radius:50% 20% / 10% 40%;
+            background-color:rgb(62, 146, 185);
+            margin-bottom: 0px;
+        }
+        .our-team-owner{
+            position: absolute;
+            top: 40px;
+            right: 160px;
+            height: 260px;
+            width: 200px;
+            border: none;
+            border-radius: 30px/10px; 
+            box-shadow: 1px 2px 3px 1px rgb(61, 57, 58);
+            transition:all 400ms;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .our-team-owner:hover{
+            height: 280px;
+            width: 230px;
+            opacity: 0.8;
+        }
+        .par-our-team-owner{
+            background-color:rgb(93, 190, 196);
+            position: absolute;
+            bottom: 25px;
+            right: 62px;
+            height: 150px;
+            width: 400px;
+            border-radius: 5px 20px 5px;
+            box-shadow: 1px 2px 3px 1px rgb(61, 57, 58);
+        }
+        .par-our-team-owner p{
+            margin-top: 6px;
+        }
+        .our-team-border1{
+            width: 60%;
+            height: 445px;
+            border: 20px solid rgb(102, 52, 91);
+        }
+        .our-team-border2-video{
+            height: 410px;
+           border: 15px solid rgb(106, 90, 121);
+           background-color: white;
+        }
+        .tv-stand{
+            height: 100px;
+            width: 50px;
+            background-color: rgb(83, 76, 76);
+            margin-left: 350px;
+        }
+        .img-social{
+            padding: 5px;
+            opacity: 0.8;
+            transition: ease-in-out 300ms;
+        }
+        .img-social:hover{
+            opacity: 1;
+            padding: 0px;
+        }
+
+
+/* design for footer*/ 
+.foot{
+    background-color:rgb(61, 55, 55);
+    height:56px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* design for videos-container*/ 
+.vid-cont-par-grandpar{
+    display: flex;
+    justify-content: center;
+}
+.video-container-parent{
+    color: aqua;
+    width: 72%;
+    height: 580px;
+    border-radius: 30px/10px; ;
+    box-shadow: 2px 2px 3px 2px paleturquoise;
+}
+.video-container{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.video{
+        text-align: center;
+        height: 220px;
+        width: 300px;
+        border: none;
+        box-shadow: 1px 2px 3px 1px aliceblue;
+        transition:linear 300ms;
+        margin-left: 20px;
+        cursor: pointer;
+        overflow: hidden;
+}
+.video:hover{
+    height: 245px;
+    width: 320px;
+    padding: 5px;
+     box-shadow: 3px 2px 3px 2px aliceblue;
+     margin-left: 10px;
+     margin-right: 10px;
+}
+.playlist-name{
+    color: rgb(45, 45, 104);
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* design for project*/ 
+.project-parent{
+    height: 446px;
+    width: 100%;
+    color: rgb(88, 117, 108);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* design for signin*/ 
+.signin-parent{
+    height: 446px;
+    width: 100%;
+    color: rgb(88, 117, 108);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* design for performance video*/ 
+.perf-vid-container{
+    height: 519px;
+    text-align: center;
+    color: rgb(93, 93, 141);
+    text-decoration: underline;
+}
+
+
+
+/* design for responsive*/ 
+@media only screen and (max-width: 1200px) {
+    .platform-container{
+        position: absolute;
+        top: 475px;
+        left: 180px;
+        height: 200px;
+        width: 60%;
+        background-color: rgb(24, 44, 44);
+        color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5%;
+}
+  }
+
+
+  @media only screen and (max-width: 900px) {
+    /* design for platform container after slides*/
+    .platform-container{
+        position: absolute;
+        left: 100px;
+        width: 80%;
+    }
+}
+
+  @media only screen and (max-width: 500px) {
+    /* design for platform container after slides*/
+    .platform-container{
+        position: absolute;
+        left: 0px;
+        width: 100%;
+    }
+    .highlight{
+       height: 100px;
+       width: 100px;
+    }
+    .highlight-pic{
+     height: 40px;
+     width: 40px;
+    }
+    .highlight-pic:hover{
+        height:50px;
+        width: 50px;
+        border: none;
+    }
+
+  /* design for why ft container*/
+  .why-ft-container{
+    text-align: center;
+    height: 1300px;
+}
+.functions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fn{
+    height: 330px;
+    width: 400px;
+    border: none;
+    box-shadow: 1px 2px 3px 1px rgb(192, 137, 146);
+    transition:all 400ms;
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.fn:hover{
+    background-color: white;
+}
+
+
+   /* design for our teams*/
+.our-team-border1{
+ display: none;
+}
+.our-team-border2-video{
+    display: none;
+}
+.tv-stand{
+    display: none;
+}
+.video-container{
+    height: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video-container-parent{
+    height: 1500px;
+}
+      }
