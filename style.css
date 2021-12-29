@@ -176,7 +176,7 @@ span{
             height: 150px;
             width: 300px;
             color: rgb(180, 187, 194);   
-            background-color: rgb(26, 49, 61);
+            background-color: rgb(57, 84, 99);
             border: none;
             border-radius: 20px;
             box-shadow: 1px 1px 3px 1px rgb(36, 52, 82);
@@ -219,7 +219,7 @@ span{
             text-decoration:underline;
             border-top-left-radius:50% 20% / 10% 40% ;
             border-top-right-radius:50% 20% / 10% 40%;
-            background-color:rgb(62, 146, 185);
+            background-color:rgb(133, 141, 135);
             margin-bottom: 0px;
         }
         .our-team-owner{
@@ -238,7 +238,7 @@ span{
         .our-team-owner:hover{
             height: 280px;
             width: 230px;
-            opacity: 0.8;
+            opacity: 0.5;
         }
         .par-our-team-owner{
             background-color:rgb(93, 190, 196);
@@ -459,3 +459,4 @@ span{
     height: 1500px;
 }
       }
+
