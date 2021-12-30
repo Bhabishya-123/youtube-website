@@ -422,7 +422,7 @@ span{
     }
     .highlight{
        height: 60px;
-       width: 80px;
+       width: 50px;
     }
     .highlight-pic{
      height: 20px;
@@ -433,12 +433,17 @@ span{
         width: 30px;
         border: none;
     }
+    .highlight-pic{
+        margin-left:5px;
+        border: 2px dotted grey;
+        transition: all 500ms;
+    }
   /* welcome intro container css */
   .welcome-intro-container{
     color: rgb(162, 199, 28);
     position: absolute;
     top: 210px;
-    left:80px;
+    left:100px;
 }
 .welcome-intro-container h5{
     display: none;
