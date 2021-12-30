@@ -34,3 +34,15 @@ function auto()
   }
 
   setInterval(auto, 3000);
+
+  //for dropdown issue
+var element1 = document.querySelector(".drop");
+var target1 = document.querySelector(".hide");
+element1.addEventListener('click', function(){
+	if(target1.style.display=='none'){
+    target1.style.display = 'block';
+  }
+  else{
+    target1.style.display = 'none';
+  }
+});
