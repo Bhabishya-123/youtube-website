@@ -76,9 +76,8 @@ span{
 
 
        /* Slideshow container */
-
-       .slideshow-container {
-        margin: auto;
+       .slideshow-container .slides {
+      width: 100%;
     }
     /* Next & previous buttons */
     .prev,
@@ -414,6 +413,7 @@ span{
 }
 
   @media only screen and (max-width: 500px) {
+
     /* design for platform container after slides*/
     .platform-container{
         position: absolute;
@@ -438,7 +438,7 @@ span{
     color: rgb(162, 199, 28);
     position: absolute;
     top: 210px;
-    left:150px;
+    left:100px;
 }
 .welcome-intro-container h5{
     display: none;
@@ -508,7 +508,7 @@ a{
 .our-team-owner{
     position: absolute;
     top: 40px;
-    right: 90px;
+    right: 60px;
     height: 260px;
     width: 200px;
 }
