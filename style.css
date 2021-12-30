@@ -438,10 +438,7 @@ span{
     color: rgb(162, 199, 28);
     position: absolute;
     top: 210px;
-    left:100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    left:150px;
 }
 .welcome-intro-container h5{
     display: none;
