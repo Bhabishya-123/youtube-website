@@ -481,6 +481,7 @@ a{
 }
 .fn:hover{
     background-color: white;
+    width:200px;
 }
     /* design for our customer*/
     .our-customer-parent{
