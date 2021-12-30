@@ -423,6 +423,7 @@ span{
     .highlight{
        height: 60px;
        width: 50px;
+        overflow:hidden;
     }
     .highlight-pic{
      height: 20px;
