@@ -15,12 +15,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--Navbar i.e header container-->
+   <!--Navbar i.e header container-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand current" href="index.html">
           <kbd> Future<span>Technical</span></kbd></a
         >
+
+         <!-- hidden dropdown item -->
+         <div class="hide">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="youtubevideo.html">video</a></li>
+            <li><a href="signin.html">signin</a></li>
+          </ul>
+        </div>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -30,45 +41,39 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon drop"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a class="nav-link active  current" aria-current="page" href="index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="project.html">Project</a>
+              <a class="nav-link  current" href="project.html">Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="youtubevideo.html">video</a>
+              <a class="nav-link  current" href="youtubevideo.html">video</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="code1.html">HTML</a></li>
-                <li><a class="dropdown-item" href="#">CSS</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="#">Jvascript</a></li>
-                <li><a class="dropdown-item" href="about.html">About</a></li>
+                  <li><a class="dropdown-item" href="#">HTML</a></li>
+                  <li><a class="dropdown-item" href="#">CSS</a></li>
+                  <li>
+                      <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Jvascript</a></li>
+                  <li><a class="dropdown-item" href="about.html">About</a></li>
               </ul>
-            </li>
+          </li>
             <li class="nav-item">
               <a
-                class="nav-link contact"
+                class="nav-link contact  current"
                 href="signin.html"
                 tabindex="-1"
                 aria-disabled="true"
