@@ -1,462 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome 5 -->
+    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+    <link rel="stylesheet" href="style.css" />
+    <title>Future Technical</title>
+  </head>
+  <body>
+    <!--Navbar i.e header container-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand current" href="index.html">
+          <kbd> Future<span>Technical</span></kbd></a
+        >
 
-/*style for navbar*/
-.navbar{
-    position: fixed;
-    width: 100%;
-}
-#navbarSupportedContent ul li a{
-font-weight: 400;
-}
- 
-#navbarSupportedContent ul li a::after{
-    content: '';
-    display:block;
-    height: 3px;
-    width: 0;
-    background: rgb(255, 0, 212);
-    transition: all 800ms;
-}
-#navbarSupportedContent ul li a:hover:after{
-    width: 100%;
-}
+         <!-- hidden dropdown item -->
+         <div class="hide">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="youtubevideo.html">video</a></li>
+            <li><a href="signin.html">signin</a></li>
+          </ul>
+        </div>
 
-span{
-    color: rgb(255, 0, 119);
-}
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon drop"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active  current" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  current" href="project.html">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  current" href="youtubevideo.html">video</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">HTML</a></li>
+                  <li><a class="dropdown-item" href="#">CSS</a></li>
+                  <li>
+                      <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Jvascript</a></li>
+                  <li><a class="dropdown-item" href="about.html">About</a></li>
+              </ul>
+          </li>
+            <li class="nav-item">
+              <a
+                class="nav-link contact  current"
+                href="signin.html"
+                tabindex="-1"
+                aria-disabled="true"
+                >Sign in</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+    <!--Auto slide show image-->
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img
+          src="./images/0.jpg"
+          style="width: 100%; height: 500px"
+        />
+      </div>
 
-  /* welcome intro container css */
-  .welcome-intro-container{
-      color: rgb(13, 126, 141);
-      position: absolute;
-      top: 210px;
-      left: 480px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-  a{
-      text-decoration: none;
-      color: black;
-  }
-  #ft-btn{
-      background-color: rgb(218, 22, 153);
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-  }
+      <div class="mySlides">
+        <img
+          src="./images/1.jpg"
+          style="width: 100%; height: 500px"
+        />
+      </div>
 
+      <div class="mySlides">
+        <img
+          src="./images/2.jpg"
+          style="width: 100%; height: 500px"
+        />
+      </div>
+      <div class="mySlides">
+        <img
+          src="./images/3.jpg"
+          style="width: 100%; height: 500px"
+        />
+      </div>
 
-       /* Slideshow container */
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
 
-       .slideshow-container {
-        margin: auto;
-    }
-    /* Next & previous buttons */
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-    /* Position the "next button" & "prev button" to the right */
-    .next {
-        top:250px;
-        right: 0;
-    }
-    .prev {
-        top:250px;
-        left: 0;
-    }
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
+    <!--after slide platform our channel provides-->
+    <div class="platform-container">
+      <h3>
+        Perfect <br />
+        youtube channel for <br />
+        Errors handling
+      </h3>
+      <div class="highlight">
+        <img
+          class="highlight-pic"
+          src="./images/learning.png"
+          height="100px"
+          alt=""
+        />
+        <h5>Learning</h5>
+      </div>
+      <div class="highlight">
+        <img
+          class="highlight-pic"
+          src="./images/question.png"
+          height="100px"
+          alt=""
+        />
+        <h5>Errors</h5>
+      </div>
+      <div class="highlight">
+        <img
+          class="highlight-pic"
+          src="./images/creativity.png"
+          height="100px"
+          alt=""
+        />
+        <h5>Ideas</h5>
+      </div>
+    </div>
 
+    <!--welocme channel with button container-->
+    <div class="welcome-intro-container">
+      <h2>Welcome to FutureTechnical</h2>
+      <h4>subscribe</h4>
+      <button id="ft-btn">
+        <b
+          ><a
+            href="https://www.youtube.com/channel/UCPWp3s9b3NWdEabol4X8okg?sub_confirmation=1"
+            >Future Technical</a
+          ></b
+        >
+      </button>
+      <h5>Don't Do code Make the code Do</h5>
+    </div>
 
-    /* design for platform container after slides*/
-    .platform-container{
-        position: absolute;
-        top: 475px;
-        left: 260px;
-        height: 200px;
-        width: 60%;
-        background-color: rgb(24, 44, 44);
-        color: aqua;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5%;
-    }
-    .highlight{
-        border: 2px solid rgb(124, 88, 88);
-        cursor: pointer;
-    }
-    .highlight-pic{
-        margin-left:50px;
-        border: 2px dotted grey;
-        transition: all 500ms;
-    }
-    .highlight-pic:hover{
-        height:150px;
-        width: 150px;
-        border: none;
-    }
+    <br /><br /><br /><br />
+    <br /><br /><br /><br />
+    <br /><br /><br /><br />
 
-      /* design for why ft container*/
-    .why-ft-container{
-        text-align: center;
-        height: 600px;
-    }
-    .functions{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .fn{
-  
-        height: 330px;
-        width: 300px;
-        border: none;
-        box-shadow: 1px 2px 3px 1px aquamarine;
-        transition:all 400ms;
-        overflow: hidden;
-        margin-left: 10px;
-        cursor: pointer;
-    }
-    .fn:hover{
-        background-color: grey;
-       height: 358px;
-       width: 350px;
-       padding: 5px;
-        box-shadow: 3px 2px 3px 2px rgb(103, 128, 128);
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .why-ft-container h4{
-        color: rgb(11, 48, 48);
-        font-weight: bold;
-        text-decoration: underline;
-    }
-    .par{
-        background-color: aquamarine;
-        font-weight: bold;
-        font-family: monospace;
-    }
+    <!--Why future technical  container-->
+    <div class="why-ft-container">
+      <div>
+        <img src="./images/thinking (2).png" height="100px" alt="" />
+        <h4>
+          <kbd
+            >Why should i choose <br />
+            FutureTechnical?</kbd
+          >
+        </h4>
+        <br /><br />
+        <div class="functions">
+          <div class="fn">
+            <img
+              src="./images/coding-language.png"
+              height="150"
+              width="200px"
+              alt=""
+            />
+            <h4>Learning platform</h4>
+            <div class="par">
+              <p>
+                This channel is based on providing learning platform on many
+                programming languages like Javascript, React ,java , C , C++ ,
+                python ,php , Mysql etc. we are going to organize free
+                e-learning platform for programming in near future.
+              </p>
+            </div>
+          </div>
+          <div class="fn">
+            <img
+              src="./images/error (1).png"
+              height="150"
+              width="200px"
+              alt=""
+            />
+            <h4>Error solving</h4>
+            <div class="par">
+              <p>
+                Site is based on the future Technical YT support along with many
+                error solving techniques related to programming fields.Our
+                youtube channel has already solved many coding errors in react
+                related part as well.
+              </p>
+            </div>
+          </div>
+          <div class="fn">
+            <img
+              src="./images/coding (2).png"
+              height="150"
+              width="200px"
+              alt=""
+            />
+            <h4>Free Project code</h4>
+            <div class="par">
+              <p>
+                We provide free projects code so that you can have an ideas
+                realted on languages like Javascript, React ,java , C , C++ ,
+                python ,php, Mysql etc.You can just go to project to see our new
+                project where you can easily get project code.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <br />
+    <br />
 
-          /* design for our customer*/
-          .our-customer-parent{
-            text-align: center;
-              height: 650px;
-          }
-          .our-customer-list-container{
-            display: flex;
-            justify-content: center;
-            align-items:
-             center;
-          }
-          .our-customer,.our-customer-nohover{
-            height: 150px;
-            width: 300px;
-            color: rgb(180, 187, 194);   
-            background-color: rgb(57, 84, 99);
-            border: none;
-            border-radius: 20px;
-            box-shadow: 1px 1px 3px 1px rgb(36, 52, 82);
-            transition:all 400ms;
-            margin-left: 8px;
-            cursor: pointer;
-          }
-          .our-customer:hover{
-             transform: rotate(360deg);
-             padding: 50px;
-             height: 340px;
-             width: 400px;
-             color: wheat;   
-             border-radius: 40px;
-            box-shadow: 1px 2px 3px 2px rgb(11, 22, 43);
-          }
-          .our-customer-parent h4{
-            color: rgb(56, 35, 43);
-            font-weight: bold;
-            text-decoration: underline;
-        }
-          .our-customer-parent h6{
-            color: rgb(81, 109, 136);
-            font-weight: bolder;
-            text-decoration: underline;
-        }
-        .par2{
-            font-weight: bold;
-            font-family: monospace;
-        }
+    <!--What user say about future technical(ft)-->
+    <div class="our-customer-parent">
+      <div>
+        <img src="./images/teamwork.png" height="150px" alt="" />
+        <h4>
+          what they say about <br />
+          Future Technical
+        </h4>
+        <br /><br />
+        <div class="our-customer-list-container">
+          <div class="our-customer-nohover">
+            <h6>
+              BIKRAM SINGH
+              <img src="./images/top-rated.png" height="30px" alt="" />
+            </h6>
+            <div class="par2">
+              <p>
+                Dil se thanks n fulfill your all dreams ❤️❤️❤️❤️❤️❤️........
+              </p>
+            </div>
+            <img
+              src="./images/profile.png"
+              height="80px"
+              width="100px"
+              alt=""
+            />
+          </div>
+          <div class="our-customer">
+            <h6>
+              Professor
+              <img src="./images/top-rated (1).png" height="30px" alt="" />
+            </h6>
+            <div class="par2">
+              <p>
+                Tnxx bro kb se dekh rha tha dimag ka bhosada hogyaa tha..tysm
+              </p>
+            </div>
+            <img
+              src="./images/profile.png"
+              height="80px"
+              width="100px"
+              alt=""
+            />
+          </div>
+          <div class="our-customer-nohover">
+            <h6>
+              Abhishek Tekalkar
+              <img src="./images/top-rated.png" height="30px" alt="" />
+            </h6>
+            <div class="par2">
+              <p>
+                Thanks for fixing Thank you so much. keep it up :)..........
+              </p>
+            </div>
+            <img
+              src="./images/profile.png"
+              height="80px"
+              width="100px"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
 
+      <br />
+      <br />
 
-              /* design for our teams*/
-        .our-team-parent{
-            font-family:cursive;
-            position: relative;
-           text-align: center;
-            height: 482px;
-            width: 100%;
-            text-decoration:underline;
-            border-top-left-radius:50% 20% / 10% 40% ;
-            border-top-right-radius:50% 20% / 10% 40%;
-            background-color:rgb(133, 141, 135);
-            margin-bottom: 0px;
-        }
-        .our-team-owner{
-            position: absolute;
-            top: 40px;
-            right: 160px;
-            height: 260px;
-            width: 200px;
-            border: none;
-            border-radius: 30px/10px; 
-            box-shadow: 1px 2px 3px 1px rgb(61, 57, 58);
-            transition:all 400ms;
-            overflow: hidden;
-            cursor: pointer;
-        }
-        .our-team-owner:hover{
-            height: 280px;
-            width: 230px;
-            opacity: 0.5;
-        }
-        .par-our-team-owner{
-            background-color:rgb(93, 190, 196);
-            position: absolute;
-            bottom: 25px;
-            right: 62px;
-            height: 150px;
-            width: 400px;
-            border-radius: 5px 20px 5px;
-            box-shadow: 1px 2px 3px 1px rgb(61, 57, 58);
-        }
-        .par-our-team-owner p{
-            margin-top: 6px;
-        }
-        .our-team-border1{
-            width: 60%;
-            height: 445px;
-            border: 20px solid rgb(102, 52, 91);
-        }
-        .our-team-border2-video{
-            height: 410px;
-           border: 15px solid rgb(106, 90, 121);
-           background-color: white;
-        }
-        .tv-stand{
-            height: 100px;
-            width: 50px;
-            background-color: rgb(83, 76, 76);
-            margin-left: 350px;
-        }
-        .img-social{
-            padding: 5px;
-            opacity: 0.8;
-            transition: ease-in-out 300ms;
-        }
-        .img-social:hover{
-            opacity: 1;
-            padding: 0px;
-        }
+      <div class="our-customer-list-container">
+        <div class="our-customer-nohover">
+          <h6>
+            BIKRAM SINGH
+            <img src="./images/top-rated.png" height="30px" alt="" />
+          </h6>
+          <div class="par2">
+            <p>Dil se thanks n fulfill your all dreams ❤️❤️❤️❤️❤️❤️........</p>
+          </div>
+          <img src="./images/profile.png" height="80px" width="100px" alt="" />
+        </div>
+        <div class="our-customer-nohover">
+          <h6>
+            Professor <img src="./images/top-rated.png" height="30px" alt="" />
+          </h6>
+          <div class="par2">
+            <p>Tnxx bro kb se dekh rha tha dimag ka bhosada hogyaa tha..tysm</p>
+          </div>
+          <img src="./images/profile.png" height="80px" width="100px" alt="" />
+        </div>
+        <div class="our-customer-nohover">
+          <h6>
+            Abhishek Tekalkar
+            <img src="./images/top-rated.png" height="30px" alt="" />
+          </h6>
+          <div class="par2">
+            <p>Thanks for fixing Thank you so much. keep it up :)..........</p>
+          </div>
+          <img src="./images/profile.png" height="80px" width="100px" alt="" />
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!--Our Teams-->
+    <div class="our-team-parent">
+      <h4>Our Teams</h4>
+      <div class="our-team-owner">
+        <img src="./images/owner.jpg" height="200px" width="200px" alt="" />
+        <h4>
+          Bhabishya Ghimire <br />
+          <p><kbd>Developer</kbd></p>
+        </h4>
+      </div>
+      <div class="par-our-team-owner">
+        <p>
+          Hello there , i am the web developer since 2020. I have learnded many
+          programming languages and always excited to learn new ones. If you
+          have any message you can follow me on : <br />
+          <a href="https://github.com/Bhabishya-123"
+            ><img src="./images/github (1).png" height="40px" alt="" class='img-social'
+          /></a>
+          <a href="https://www.facebook.com/bhabishya.ghimireabd.7/">
+            <img src="./images/facebook (1).png" height="40px" alt="" class='img-social'
+          /></a>
+          <a href="https://www.linkedin.com/in/futurecoding-np-655286221/"> 
+            <img src="./images/linkedin (1).png" height="40px" alt="" class='img-social'
+          /></a>
+        </p>
+      </div>
 
+      <div class="our-team-border1">
+        <div class="our-team-border2-video">
+          <video height="380px" width="750px" autoplay>
+            <source src="./videos/2.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--Our Teams-TV-stand-->
+    <div class="tv-stand"></div>
 
-/* design for footer*/ 
-.foot{
-    background-color:rgb(61, 55, 55);
-    height:56px;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-}
+    <!--footer-->
+    <div class="foot">
+      <footer class="text-muted text-center text-small">
+        <p class="mb-1"><kbd> © 2021 Future Technical</kbd></p>
+        <ul class="list-inline">
+          <kbd>
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+          </kbd>
+        </ul>
+      </footer>
+    </div>
 
-
-/* design for videos-container*/ 
-.vid-cont-par-grandpar{
-    display: flex;
-    justify-content: center;
-}
-.video-container-parent{
-    color: aqua;
-    width: 72%;
-    height: 580px;
-    border-radius: 30px/10px; ;
-    box-shadow: 2px 2px 3px 2px paleturquoise;
-}
-.video-container{
-    height: 250px;
-    display: flex;
-    justify-content: center;
-}
-.video{
-        text-align: center;
-        height: 220px;
-        width: 300px;
-        border: none;
-        box-shadow: 1px 2px 3px 1px aliceblue;
-        transition:linear 300ms;
-        margin-left: 20px;
-        cursor: pointer;
-        overflow: hidden;
-}
-.video:hover{
-    height: 245px;
-    width: 320px;
-    padding: 5px;
-     box-shadow: 3px 2px 3px 2px aliceblue;
-     margin-left: 10px;
-     margin-right: 10px;
-}
-.playlist-name{
-    color: rgb(45, 45, 104);
-    text-align: center;
-    text-decoration: underline;
-}
-
-/* design for project*/ 
-.project-parent{
-    height: 446px;
-    width: 100%;
-    color: rgb(88, 117, 108);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-/* design for signin*/ 
-.signin-parent{
-    height: 446px;
-    width: 100%;
-    color: rgb(88, 117, 108);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* design for performance video*/ 
-.perf-vid-container{
-    height: 519px;
-    text-align: center;
-    color: rgb(93, 93, 141);
-    text-decoration: underline;
-}
-
-
-
-/* design for responsive*/ 
-@media only screen and (max-width: 1200px) {
-    .platform-container{
-        position: absolute;
-        top: 475px;
-        left: 180px;
-        height: 200px;
-        width: 60%;
-        background-color: rgb(24, 44, 44);
-        color: aqua;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5%;
-}
-  }
-
-
-  @media only screen and (max-width: 900px) {
-    /* design for platform container after slides*/
-    .platform-container{
-        position: absolute;
-        left: 100px;
-        width: 80%;
-    }
-}
-
-  @media only screen and (max-width: 500px) {
-    /* design for platform container after slides*/
-    .platform-container{
-        position: absolute;
-        left: 0px;
-        width: 100%;
-    }
-    .highlight{
-       height: 100px;
-       width: 100px;
-    }
-    .highlight-pic{
-     height: 40px;
-     width: 40px;
-    }
-    .highlight-pic:hover{
-        height:50px;
-        width: 50px;
-        border: none;
-    }
-
-  /* design for why ft container*/
-  .why-ft-container{
-    text-align: center;
-    height: 1300px;
-}
-.functions{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.fn{
-    height: 330px;
-    width: 400px;
-    border: none;
-    box-shadow: 1px 2px 3px 1px rgb(192, 137, 146);
-    transition:all 400ms;
-    overflow: hidden;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-.fn:hover{
-    background-color: white;
-}
-
-
-   /* design for our teams*/
-.our-team-border1{
- display: none;
-}
-.our-team-border2-video{
-    display: none;
-}
-.tv-stand{
-    display: none;
-}
-.video-container{
-    height: 750px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.video-container-parent{
-    height: 1500px;
-}
-      }
-
+    <script src="brain.js"></script>
+  </body>
+</html>
