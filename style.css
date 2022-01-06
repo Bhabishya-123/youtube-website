@@ -9,6 +9,7 @@
 .navbar{
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 #navbarSupportedContent ul li a{
 font-weight: 400;
