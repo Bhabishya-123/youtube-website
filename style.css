@@ -56,10 +56,10 @@ span{
 
   /* welcome intro container css */
   .welcome-intro-container{
-      color: rgb(13, 126, 141);
+   color: rgb(13, 126, 141);
       position: absolute;
-      top: 210px;
-      left: 480px;
+      top: 30%;
+      left: 36%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -441,23 +441,10 @@ span{
         transition: all 500ms;
     }
   /* welcome intro container css */
-  .welcome-intro-container{
-    color: rgb(162, 199, 28);
-    position: absolute;
-    top: 210px;
-    left:100px;
-}
-.welcome-intro-container h5{
-    display: none;
-}
-.welcome-intro-container h2{
-    display: none;
-}
-a{
-    text-decoration: none;
-    color: rgb(71, 55, 21);
-}
-
+   .welcome-intro-container h5,h4,#ft-btn{
+         display:none;
+     }
+     
 
   /* design for why ft container*/
   .why-ft-container{
@@ -516,15 +503,17 @@ a{
 }
 .our-team-owner{
     position: absolute;
-    top: 40px;
-    right: 60px;
-    height: 260px;
-    width: 200px;
+    top: 20%;
+    right: 20%;
+    height: 65%;
+    width: 50%;
 }
 .par-our-team-owner{
+    width: 80%;
     position: absolute;
-    right: 5px;
+    left:5%;
 }
+
 
    /* design for video teams*/
    .video-container-parent{
