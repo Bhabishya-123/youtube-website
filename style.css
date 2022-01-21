@@ -413,7 +413,7 @@ span{
     }
 }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 700px) {
 
     /* design for platform container after slides*/
     .platform-container{
